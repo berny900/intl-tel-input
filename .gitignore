@@ -11,6 +11,8 @@
 *.iml
 .DS_Store
 
+.vs/
+
 # these files are now auto-generated
 /src/img/
 

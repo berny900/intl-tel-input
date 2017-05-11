@@ -1226,6 +1226,11 @@ Plugin.prototype = {
     if (flagChanged) {
       this._triggerCountryChange();
     }
+  },
+  // modified by BR 02/2017
+  setNumberType: function (placeholderNumberType) {
+      this.options.placeholderNumberType = placeholderNumberType;
+      this._updatePlaceholder();
   }
 
 };
