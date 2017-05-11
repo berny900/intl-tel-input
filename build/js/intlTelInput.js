@@ -3,6 +3,7 @@
  * https://github.com/jackocnr/intl-tel-input.git
  * Licensed under the MIT license
  */
+
 // wrap in UMD - see https://github.com/umdjs/umd/blob/master/jqueryPluginCommonjs.js
 (function(factory) {
     if (typeof define === "function" && define.amd) {
@@ -1004,6 +1005,11 @@
             if (flagChanged) {
                 this._triggerCountryChange();
             }
+        },
+        // modified by BR 02/2017
+        setNumberType: function(placeholderNumberType) {
+            this.options.placeholderNumberType = placeholderNumberType;
+            this._updatePlaceholder();
         }
     };
     // using https://github.com/jquery-boilerplate/jquery-boilerplate/wiki/Extending-jQuery-Boilerplate
